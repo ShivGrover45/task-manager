@@ -1,0 +1,14 @@
+<!-- tasks/templates/base_generic.html -->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}Task Manager{% endblock %}</title>
+</head>
+<body>
+    <nav>
+        <a href="{% url 'task_list' %}">Home</a>
+    </nav>
+    {% block content %}
+    {% endblock %}
+</body>
+</html>
